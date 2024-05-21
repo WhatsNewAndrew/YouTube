@@ -7,7 +7,7 @@ Welcome to the What's New Andrew repository! This repository contains various re
 I will continue to add items to the repository as I build out more content.  
 
 
-### [WireGuard Easy VPN Server](https://github.com/WhatsNewAndrew/WhatsNewAndrew/blob/main/docker-compose/wireguard_easy/compose.yml)
+### [WireGuard Easy VPN Server](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/wireguard-easy/compose.yml)
 This Docker Compose file will allow you to quickly set up your very own WireGuard VPN server.  It includes a simple Admin UI to allow you to manage all your users easily.
 
 ## Contact
