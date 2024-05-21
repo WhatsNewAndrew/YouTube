@@ -1,0 +1,56 @@
+services:
+  wg-easy:
+    image: ghcr.io/wg-easy/wg-easy
+    container_name: wg-easy
+    volumes:
+      - etc_wireguard:/etc/wireguard
+    ports:
+      - "51820:51820/udp"
+      - "51821:51821/tcp"
+    restart: unless-stopped    
+    cap_add: 
+      - NET_ADMIN # Add addtional parameters to allow interacting with the network stack
+      - SYS_MODULE # grant it the ability to load and unload kernel modules without requiring full root access.
+    sysctls:
+      - net.ipv4.ip_forward=1 # Enable IP forwarding allowing the system to act as a router by passing packets between different network interfaces based on their destination IP addresses
+      - net.ipv4.conf.all.src_valid_mark=1 # When set to 1, it enables the kernel to check whether the source address of incoming packets is valid or not. This configuration helps enhance network security by enforcing stricter validation of incoming packets.
+    environment:
+# REQUIRED:
+      # Change this to your host's public address.  use whatsmyip.com or google to find your IP if you do not know it
+      - WG_HOST=${HOSTIP}
+      # Change Language:
+      # (Supports: en, ua, ru, tr, no, pl, fr, de, ca, es, ko, vi, nl, is, pt, chs, cht, it, th, hi)
+      - LANG=en
+      # DNS server clients will use. If set to blank value, clients will not use any DNS.
+      - WG_DEFAULT_DNS=1.1.1.1 
+# OPTIONAL
+      # Web UI Password.  If not set then there is no password for the admin UI
+      - PASSWORD=${STRONGPASSWORD}
+      
+      # If you want to use different ports, you can change them here, but you must also change them in the "ports" section above to match
+      # - PORT=51821 # TCP port for Web UI
+      # - WG_PORT=51820 # The public UDP port of your VPN server
+
+      # Clients IP address range.  Default is 10.8.0.x
+      # - WG_DEFAULT_ADDRESS=10.6.0.x  
+
+      # The MTU the clients will use. Server uses default WG MTU
+      # - WG_MTU=1420 
+      # Value in seconds to keep the "connection" open. If this value is 0, then connections won't be kept alive.
+      - WG_PERSISTENT_KEEPALIVE=25 
+
+      # Allowed IPs clients will use.  Default is to allow all 0.0.0.0/0
+      # - WG_ALLOWED_IPS=192.168.15.0/24, 10.0.1.0/24 
+
+      # Optional Messages    
+      # - WG_PRE_UP=echo "Pre Up" > /etc/wireguard/pre-up.txt
+      # - WG_POST_UP=echo "Post Up" > /etc/wireguard/post-up.txt
+      # - WG_PRE_DOWN=echo "Pre Down" > /etc/wireguard/pre-down.txt
+      # - WG_POST_DOWN=echo "Post Down" > /etc/wireguard/post-down.txt
+
+      # Enable detailed RX / TX client stats in Web UI and set the chart type shown
+      - UI_TRAFFIC_STATS=true
+      - UI_CHART_TYPE=0 # (0 Charts disabled, 1 # Line chart, 2 # Area chart, 3 # Bar chart)
+
+volumes:
+  etc_wireguard:      
