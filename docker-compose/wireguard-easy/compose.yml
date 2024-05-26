@@ -50,7 +50,7 @@ services:
 
       # Enable detailed RX / TX client stats in Web UI and set the chart type shown
       - UI_TRAFFIC_STATS=true
-      - UI_CHART_TYPE=0 # (0 Charts disabled, 1 # Line chart, 2 # Area chart, 3 # Bar chart)
+      - UI_CHART_TYPE=2 # (0 Charts disabled, 1 # Line chart, 2 # Area chart, 3 # Bar chart)
 
 volumes:
   etc_wireguard:      
