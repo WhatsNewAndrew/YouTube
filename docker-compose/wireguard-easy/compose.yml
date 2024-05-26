@@ -9,7 +9,7 @@ services:
       - "51821:51821/tcp"
     restart: unless-stopped    
     cap_add: 
-      - NET_ADMIN # Add addtional parameters to allow interacting with the network stack
+      - NET_ADMIN # Allows interacting with the network stack
       - SYS_MODULE # grant it the ability to load and unload kernel modules without requiring full root access.
     sysctls:
       - net.ipv4.ip_forward=1 # Enable IP forwarding allowing the system to act as a router by passing packets between different network interfaces based on their destination IP addresses
