@@ -1,0 +1,29 @@
+# Sample Config file for frigate install 
+mqtt:
+  enabled: false
+
+ffmpeg:
+  #hwaccel_args: preset-vaapi #may not work for your hardware
+  output_args:
+    record: preset-record-generic-audio-aac # Enable audio with video
+
+detectors:
+  coral:
+    type: edgetpu
+    device: usb
+
+cameras:
+  Camera1:
+    enabled: true
+    ffmpeg:
+      inputs:
+      # NOTE: your PoE camera may use a different pat for the setup.  Refer to the manufacturer website to get the applicable rtsp path
+      - path: rtsp://username:password@your.ip.goes.here:554/
+        roles:
+        - record
+      - path: rtsp://username:password@your.ip.goes.here:554/
+        roles:
+        - detect
+    detect:
+      width: 1280
+      fps: 24
