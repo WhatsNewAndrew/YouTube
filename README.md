@@ -17,9 +17,9 @@ These files are used in my YouTube Step-by-Step tutorial on **[Installing Frigat
 ## 🔭 What's Next Andrew?
 See my upcoming Videos on my **[kanban board](https://whatsnewandrew.com/whats-next-andrew/)**
 
-## 📫 Contact
+##  Contact
 
-If you have any questions or feedback regarding the channel or the resources in this repository, feel free to reach out via [email](mailto:andrew@whatsnewandrew.com) or through the YouTube channel.
+If you have any questions or feedback regarding the channel or the resources in this repository, feel free to reach out via 📫 [email](mailto:andrew@whatsnewandrew.com), [Twitter/X](https://x.com/whatsnewandrew) or leave me a comment on my [What's New Andrew YouTube Channel](https://www.youtube.com/channel/UCdIpxAnBnQa9ORpyMqwcYDw?sub_confirmation=1)
 
 <!--
 **WhatsNewAndrew/WhatsNewAndrew** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
