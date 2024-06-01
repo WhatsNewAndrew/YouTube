@@ -1,11 +1,11 @@
-# YouTube Repository
+# 🎥 YouTube Repository
 
 Welcome to the What's New Andrew repository! This repository contains various resources referenced on my [What's New Andrew YouTube Channel](https://www.youtube.com/channel/UCdIpxAnBnQa9ORpyMqwcYDw?sub_confirmation=1)
 
-## Support My Work
+## ❤️ Support My Work
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/andrewbusbee)
 
-## What's New Andrew?
+## 🆕 What's New Andrew?
 I will continue to add items to the repository as I build out more content.  
 
 ### **[WireGuard Easy VPN Server](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/wireguard-easy/compose.yml)**
@@ -17,12 +17,15 @@ These files are used in my YouTube Step-by-Step tutorial on **[Installing Frigat
 ## 🔭 What's Next Andrew?
 See my upcoming Videos on my **[kanban board](https://whatsnewandrew.com/whats-next-andrew/)**
 
-## Contact
+## 📫 Contact
 
 If you have any questions or feedback regarding the channel or the resources in this repository, feel free to reach out via [email](mailto:andrew@whatsnewandrew.com) or through the YouTube channel.
 
 <!--
 **WhatsNewAndrew/WhatsNewAndrew** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+CHEAT SHEET FOR MARKDOWN
+https://www.markdownguide.org/cheat-sheet/
 
 Here are some ideas to get you started:
 
