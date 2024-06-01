@@ -1,0 +1,24 @@
+services:
+  frigate:
+    container_name: frigate
+    privileged: true
+    restart: unless-stopped
+    image: ghcr.io/blakeblackshear/frigate:stable
+    cap_add:
+      - CAP_PERFMON
+    shm_size: "128mb"
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+      - /dev/dri/renderD128:/dev/dri/renderD128 # for intel hwaccel, needs to be updated for your hardware. See video on how to find this
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /opt/frigate/config/config.yml:/config/config.yml:rw # This is where config.yml is stored to hold camera info, etc.
+      # This is where our images are stored.  In our case it is the mapped NFS folder. Change to a local directory if you are not mapping to a NAS
+      # If you are storing to a local directory, you need to insure that you have enough space on your drive to store all the files you need so that
+      # you do not run out of disk space
+      - /mnt/frigate-demo:/media/frigate
+    ports:
+      - "5000:5000"
+      - "1935:1935" # RTMP feeds
+    environment:
+      FRIGATE_RTSP_PASSWORD: "StrongPassword"
