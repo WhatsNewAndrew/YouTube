@@ -1,0 +1,3 @@
+# The following is a sample fstab file to mount your LXC container to your NAS.  This must be done on a privelidged container
+
+  <your.nas.IP.Address>:/path/to/shared/folder  /path/to/local/folder  nfs  auto,nofail,noatime,nolock,intr,tcp,actimeo=1800  0  0
