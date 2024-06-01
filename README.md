@@ -8,13 +8,13 @@ Welcome to the What's New Andrew repository! This repository contains various re
 ## What's New Andrew?
 I will continue to add items to the repository as I build out more content.  
 
-**[WireGuard Easy VPN Server](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/wireguard-easy/compose.yml)**
+### **[WireGuard Easy VPN Server](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/wireguard-easy/compose.yml)**
 This Docker Compose file will allow you to quickly set up your very own WireGuard VPN server.  It includes a simple Admin UI to allow you to manage all your users easily.  These are supporting files for my YouTube video that teaches you how to **[Create Your Own VPN in Minutes!](https://youtu.be/T8DaZSA2JG8?si=Xf8NA4QRD0N0iZzu)**
 
-**[Frigate on a Proxmox LXC](https://github.com/WhatsNewAndrew/YouTube/tree/main/docker-compose/frigate)**
+### **[Frigate on a Proxmox LXC](https://github.com/WhatsNewAndrew/YouTube/tree/main/docker-compose/frigate)**
 These files are used in my YouTube Step-by-Step tutorial on **[Installing Frigate On A Proxmox LXC Container With A Coral USB Accelerator](https://youtu.be/zKk9dnAp8FM)**
 
-### 🔭 What's Next Andrew?
+## 🔭 What's Next Andrew?
 See my upcoming Videos on my **[kanban board](https://whatsnewandrew.com/whats-next-andrew/)**
 
 ## Contact
