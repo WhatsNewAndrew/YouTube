@@ -37,8 +37,13 @@ services:
       WHITELIST: "Put,Usernames,here" # A list of usernames and/or UUIDs separated by comma.  Your MAX_PLAYERS should be equal to or greater than this number
       # WHITELIST_FILE: "/path/to/whitelist/file        # A url or file path to a whitelist json formatted file.  Use this or WHITELIST above.  Not Both
       # OPS: "player1, player2"    # Optional list of users who can be designated as operators
-    
+ 
     volumes:                       # Location where minecraft data is stored.  Make sure to change these to a different location if you spin up another server so that you do not cause conflicts
-      - ./survivalData:/data
-      - ./survivalPlugins:/plugins
-      - ./survivalMods:/mods
+      - survivalData:/data
+      - survivalPlugins:/plugins
+      - survivalMods:/mods
+
+volumes:
+  survivalData:
+  survivalPlugins:
+  survivalMods:
