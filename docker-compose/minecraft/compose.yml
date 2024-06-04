@@ -1,0 +1,41 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft
+    ports:
+      - 25565:25565  # Default port is 25565.  Change to a different port for each server you run.  Only change the left port.  The right port needs to stay 25565
+    restart: always
+
+    # The following environment values can be changed as you see fit.  I have commented out ones that default to the value shown.  Feel free to uncomment them and change them or leave them as-is
+    environment:
+      TYPE:  "VANILLA"             # Server type which is the Offical Software provided by Mojang.  Default is VANILLA
+      EULA: "TRUE"                 # the only required variable. Be sure to always include EULA=TRUE in your commands and container definitions, as Mojang/Microsoft requires EULA acceptance.
+      # VERSION: "LATEST"          # The minecraft version.  Default is LATEST
+      MOTD: "My Survival Server"   # Server log in message.  Default is Blank.  Put whatever message you want in here    
+      DIFFICULTY: "peaceful"       # The difficulty level. Available values: peaceful,easy,normal,hard
+      # ICON: "url"                # The url or file path for the icon image to use for the server. It will be downloaded, scaled, and converted to the proper format.
+      MAX_PLAYERS: 10              # The maximum number of players that can join the server.  Recommend setting it to at least the number of users in your whitelist
+      # ALLOW_NETHER: "true"       # Allows players to travel to the Nether. Default is TRUE
+      # ANNOUNCE_PLAYER_ACHIEVEMENTS: "true" # Allows server to announce when a player gets an achievement.. Default is TRUE
+      TZ: "America/New_York"       # Timezone based on where the server is.  Optional.
+      SPAWN_PROTECTION: 0          # Sets the area that non-ops can not edit (0 to disable)
+      ENABLE_ROLLING_LOGS: "true"  # By default the vanilla log file will grow without limit. The logger can be reconfigured to use a rolling log files strategy by setting this to true and save space
+      MODE: "survival"             # Minecraft servers are configured to run in Survival mode by default. You can change the mode to :creative, survival, adventure, spectator(minecraft 1.8 or later) 
+      # UID: "1000"                # The linux user id to run as.  Default is 1000
+      # GID: "1000"                # The linux group id to run as. Default is 1000
+      MEMORY: 2G                   # The image declares an initial and maximum Java memory-heap limit of 1 GB.
+      SERVER_NAME: "My Survival Minecraft Server"  # Whatever you want to name the server
+      # SPAWN_ANIMALS: "true"      # Determines if animals will be able to spawn. Default is TRUE
+      # SPAWN_MONSTERS: "true"     # Determines if monsters will be spawned. Default is TRUE
+      # SPAWN_NPCS: "true"         # Determines if villagers will be spawned. Default is TRUE
+      # Enable and enforce whitelist on the next few lines so that only approved users can join your server.  
+      ENABLE_WHITELIST: "TRUE"     # Enable the whitelist to manually manage the whitelist.  Default is FALSE
+      ENFORCE_WHITELIST: "TRUE"    # Enforce regeneration of the whitelist on each server startup. Default is FALSE
+      WHITELIST: "Put,Usernames,here" # A list of usernames and/or UUIDs separated by comma.  Your MAX_PLAYERS should be equal to or greater than this number
+      # WHITELIST_FILE: "/path/to/whitelist/file        # A url or file path to a whitelist json formatted file.  Use this or WHITELIST above.  Not Both
+      # OPS: "player1, player2"    # Optional list of users who can be designated as operators
+    
+    volumes:                       # Location where minecraft data is stored.  
+      - ./survivalData:/data
+      - ./survivalPlugins:/plugins
+      - ./survivalMods:/mods
