@@ -1,5 +1,6 @@
 # This is a sample docker compose file that will build a minecraft java survivor server.  If you want to run multiple servers simply spin them up with 
-# this file for each server you want to build.  Change the port xxxxx:25565, MODE, and container_name, and volumes so they are unique between the servers
+# this file for each server you want to build.  At a minimum, change the port xxxxx:25565 and container_name so they are unique between the servers.  You
+# can also change the MODE so that each server is a different type
 
 services:
   minecraft:
@@ -38,12 +39,12 @@ services:
       # WHITELIST_FILE: "/path/to/whitelist/file        # A url or file path to a whitelist json formatted file.  Use this or WHITELIST above.  Not Both
       # OPS: "player1, player2"    # Optional list of users who can be designated as operators
  
-    volumes:                       # Location where minecraft data is stored.  Make sure to change these to a different location if you spin up another server so that you do not cause conflicts
-      - survivalData:/data
-      - survivalPlugins:/plugins
-      - survivalMods:/mods
+    volumes:                       # Location where minecraft data is stored.  
+      - Data:/data
+      - Plugins:/plugins
+      - Mods:/mods
 
 volumes:
-  survivalData:
-  survivalPlugins:
-  survivalMods:
+  Data:
+  Plugins:
+  Mods:
