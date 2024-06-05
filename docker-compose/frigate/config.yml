@@ -17,7 +17,7 @@ cameras:
     enabled: true
     ffmpeg:
       inputs:
-      # NOTE: your PoE camera may use a different pat for the setup.  Refer to the manufacturer website to get the applicable rtsp path
+      # NOTE: your PoE camera may use a different format for the setup.  Refer to the manufacturer website to get the applicable rtsp path
       - path: rtsp://username:password@your.ip.goes.here:554/
         roles:
         - record
