@@ -3,7 +3,7 @@ mqtt:
   enabled: false
 
 ffmpeg:
-  #hwaccel_args: preset-vaapi #may not work for your hardware
+  # hwaccel_args: preset-vaapi ## may not work for your hardware.  I find it does not work well with Annke cameras.
   output_args:
     record: preset-record-generic-audio-aac # Enable audio with video
 
