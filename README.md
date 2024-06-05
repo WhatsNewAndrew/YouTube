@@ -15,7 +15,7 @@ This Docker Compose file will allow you to quickly set up your very own WireGuar
 These files are used in my YouTube Step-by-Step tutorial on **[Installing Frigate On A Proxmox LXC Container With A Coral USB Accelerator](https://youtu.be/zKk9dnAp8FM)**
 
 ### 🎮**[Minecraft Server](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/minecraft/compose.yml)**
-This Docker Compose file allows you to easily set up your very own Minecraft Server!  Step-by-step instructions can be found in my Minecraft Server YouTube video: **[Create Your Own Minecraft Server NOW! An Easy Step-by-Step Guide!](#)**
+This Docker Compose file allows you to easily set up your very own Minecraft Server!  Step-by-step instructions can be found in my Minecraft Server YouTube video: **[Create Your Own Minecraft Server NOW! An Easy Step-by-Step Guide!](https://youtu.be/jnPNObPzYKU)**
 
 ## 🔭 What's Next Andrew?
 See my upcoming Videos on my **[kanban board](https://whatsnewandrew.com/whats-next-andrew/)**
