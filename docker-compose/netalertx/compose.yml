@@ -3,7 +3,7 @@ services:
      image: jokobsk/netalertx:latest   # Name of the image we will be using
      container_name: netalertx         # Name of the container as it will show in portainer and docker ps commands 
      healthcheck:                      # This is the healthcheck for the container.  You will need to put the IP of your machine and the port number from below
-      test: curl -f http://10.0.0.150:17811/ || exit 1
+      test: curl -f http://192.168.1.1:17811/ || exit 1
      mem_limit: 4g                     # This is the memory limit for the container so that it does not take too many resources
      security_opt:
       - no-new-privileges:true         # This flag ensures that the processes running within the container cannot escalate their privileges beyond what they were started with
