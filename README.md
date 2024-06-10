@@ -25,7 +25,7 @@ See my upcoming Videos on my **[kanban board](https://whatsnewandrew.com/whats-n
 
 ##  Contact
 
-If you have any questions or feedback regarding the channel or the resources in this repository, feel free to reach out via [email](mailto:andrew@whatsnewandrew.com), [Twitter/X](https://x.com/whatsnewandrew) or leave me a comment on my [What's New Andrew YouTube Channel](https://www.youtube.com/channel/UCdIpxAnBnQa9ORpyMqwcYDw?sub_confirmation=1)
+If you have any questions or feedback regarding the channel or the resources in this repository, feel free to reach out via [email](mailto:andrew@whatsnewandrew.com), [X/Twitter](https://x.com/whatsnewandrew) or leave me a comment on my [What's New Andrew YouTube Channel](https://www.youtube.com/channel/UCdIpxAnBnQa9ORpyMqwcYDw?sub_confirmation=1)
 
 <!--
 **WhatsNewAndrew/WhatsNewAndrew** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
