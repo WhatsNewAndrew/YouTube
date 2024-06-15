@@ -1,0 +1,12 @@
+# Simple docker compose sample file for spinning up Uptime Kuma
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1  # Latest stable (Recommended Tag is '1' or 'latest')
+    container_name: uptime-kuma    # Name of the container when running docker ps or listing in portainer
+    volumes:
+      - data:/app/data             # Location of the data for the container.  this can be a volume as is done here and defined below or an absolute path on your machine like /home/<username>/uptimekuma
+    ports:
+      - 3001:3001                  # <Host Port>:<Container Port> Container port must remain 3001, but you can change the host port if you have a conflict.  Ports in the 8000 range tend to be good to use
+    restart: always                # Restart in case the host system reboots, etc.
+volumes:                           # Define the volumes.  Only needed if you use a volume name above.  Not needed if you use an absolute path
+  data:    
