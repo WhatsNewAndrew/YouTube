@@ -18,7 +18,10 @@ These files are used in my YouTube Step-by-Step tutorial on **[Installing Frigat
 This Docker Compose file allows you to easily set up your very own Minecraft Server!  Step-by-step instructions can be found in my Minecraft Server YouTube video: **[Create Your Own Minecraft Server NOW! An Easy Step-by-Step Guide!](https://youtu.be/rMznOxsnHTU)**
 
 ### 🛡️[Net AlertX on Docker & Portainer!](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/netalertx/compose.yml)
-This Docker Compose file allows you to easily set up your own network monitoring platform with Net AlertX.  Step-by-step instructions can be found in my Minecraft Server YouTube video: **[Monitor Your Network with Net AlertX!](https://youtu.be/umh1c_40HW8)**
+This Docker Compose file allows you to easily set up your own network monitoring platform with Net AlertX.  Step-by-step instructions can be found in my YouTube video: **[Monitor Your Network with Net AlertX!](https://youtu.be/umh1c_40HW8)**
+
+### ⬆️[Uptime Kuma on Docker & Portainer!](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/uptime-kuma/compose.yml)
+This Docker Compose file allows you to easily set up your own application monitoring platform with Uptime Kuma.  Step-by-step instructions can be found in my YouTube video: **[Monitor Your Applications with Uptime Kuma: A Step by Step Guide!](https://youtu.be/oejwe4pdwiE)**
 
 ## 🔭 What's Next Andrew?
 See my upcoming Videos on my **[kanban board](https://whatsnewandrew.com/whats-next-andrew/)**
