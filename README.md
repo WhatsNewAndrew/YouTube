@@ -23,6 +23,9 @@ This Docker Compose file allows you to easily set up your own network monitoring
 ### ⬆️[Uptime Kuma on Docker & Portainer!](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/uptime-kuma/compose.yml)
 This Docker Compose file allows you to easily set up your own application monitoring platform with Uptime Kuma.  Step-by-step instructions can be found in my YouTube video: **[Monitor Your Applications with Uptime Kuma: A Step by Step Guide!](https://youtu.be/JwCsnPi9hvY)**
 
+### ⬆️[Sample Apache httpd Docker Compose File](https://github.com/WhatsNewAndrew/YouTube/blob/main/docker-compose/apache-hppd/compose.yml)
+This Docker Compose file will create a sample apache webserver you can use to test your setup with Nginx Proxy Manager.  Step-by-step instructions on installing and configuring Nginx Proxy Manager can be found in my YouTube video: **[Install Nginx Proxy Manager in 10-Minutes - An Easy Step-By-Step Guide!](https://youtu.be/yLduQiQXorc)**
+
 ## 🔭 What's Next Andrew?
 See my upcoming Videos on my **[kanban board](https://whatsnewandrew.com/whats-next-andrew/)**
 
