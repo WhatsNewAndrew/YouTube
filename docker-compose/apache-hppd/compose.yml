@@ -1,9 +1,17 @@
-version: '3.9'
 services:
   apache:
     image: httpd:latest
-    container_name: my-apache-app
+    container_name: apache
     ports:
     - '8080:80'
     volumes:
-    - ./website:/usr/local/apache2/htdocs
+    - website:/usr/local/apache2/htdocs
+volumes:
+  websites:
+
+  # This section is needed to put all docker containers on the same docker network as Nginx Proxy Manager so that you can reference the container name and container port in your host setup. 
+  # This is a best practice, but is optional as you can use the internal IP and Port number and port as another option
+networks:
+  default:
+    external: true
+    name: nginxpm # This is the name of the docker network that you want to attach to.  
